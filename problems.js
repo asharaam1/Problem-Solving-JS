@@ -34,13 +34,41 @@ let solution = document.querySelector('.text');
 //         if ((nums[i] % 2) === (nums[i + 1] % 2)) {
 //             console.log(false);
 //             return false;
-            
+
 //         }
 //     }
 //     console.log(true);
 //     return true;
-    
+
 // };
 
 // let ans = isArraySpecial([4, 3, 1, 6])
 // solution.innerHTML = `Array:[4, 3, 1, 6] Ans:${ans}`
+
+
+
+
+//! Pr # 03
+// problem.innerHTML = "Find the final Value of Variable After Performing Operations <br/> <br/>You are given an array of strings operations where each element is an operation of either incrementing or decrementing a variable X. You need to return the final value of X after performing all the operations. <br/> X++ or ++X: Increment the variable X by 1. <br/> X-- or --X: Decrement the variable X by 1."
+// const finalValueAfterOperations = (operations) => {
+//   let result = 0;
+
+//   for (let i = 0; i < operations.length; i++) {
+//     if (operations[i] === "X++") {
+//       result++;
+//     } else if (operations[i] === "--X") {
+//       result--;
+//     } else if (operations[i] === "++X") {
+//       result++;
+//     } else if (operations[i] === "X--") {
+//       result--;
+//     }
+//   }
+
+//   return result;
+// };
+
+// finalValueAfterOperations(["X++"]);
+// console.log(finalValueAfterOperations(["X"]));
+// let ans = finalValueAfterOperations(["X++"])
+// solution.innerHTML = `finalValueAfterOperations(["X++"])  <br/>Ans:${ans}`
