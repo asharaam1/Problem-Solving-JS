@@ -72,3 +72,42 @@ let solution = document.querySelector('.text');
 // console.log(finalValueAfterOperations(["X"]));
 // let ans = finalValueAfterOperations(["X++"])
 // solution.innerHTML = `finalValueAfterOperations(["X++"])  <br/>Ans:${ans}`
+
+
+
+
+//! Pr # 04
+// problem.innerHTML = `A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Given a string s, return true if it is a palindrome, or false otherwise. <br/> link: <a href="https://leetcode.com/problems/valid-palindrome/description/?form=MG0AV3">https://leetcode.com/problems/valid-palindrome/description/?form=MG0AV3</a>`
+// function isPalindrome1(s) {
+//     s = s.toLowerCase();
+//     s = s.replaceAll(/[^a-z0-9]/g, ""); // regex
+
+//     let reverseString = s.split("").reverse().join("");
+//     let result = s === reverseString;
+//     console.log(reverseString);
+    
+//     return result;
+// }
+
+// function isPalindrome2(s) {
+//     s = s.toLowerCase();
+//     s = s.replaceAll(/[^a-z0-9]/g, "");
+
+//     for (let i = 0; i < s.length; i++) {
+//         if (s[i] !== s[s.length - i - 1]) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+// let s = "sA man, a plan, a canal: Panama"; // false
+// // let s = "A man, a plan, a canal: Panama" // true
+// // let s = "shehzad";  //false
+// // let s = "level"  //true
+// // let s = "civic" //true
+// // let s = "mah)(*&^%$#@!am";  //true buz remove all non-alphanumeric characters using the regex
+
+// console.log(isPalindrome1(s));
+// let ans = isPalindrome1(s)
+// solution.innerHTML = `"sA man, a plan, a canal: Panama"  <br/>Ans:${ans}`
