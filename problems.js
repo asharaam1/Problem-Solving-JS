@@ -72,3 +72,23 @@ let solution = document.querySelector('.text');
 // console.log(finalValueAfterOperations(["X"]));
 // let ans = finalValueAfterOperations(["X++"])
 // solution.innerHTML = `finalValueAfterOperations(["X++"])  <br/>Ans:${ans}`
+
+
+
+//! Pr # 04
+// problem.innerHTML = "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. <br/>  link: <a href="https://leetcode.com/problems/contains-duplicate/description/">https://leetcode.com/problems/contains-duplicate/description/</a>"
+function containsDuplicate(nums) {
+    nums.sort(); // this is for aligning same number together
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === nums[i + 1]) {  //here i+1 will check the next element in the loop buz lenghth is used
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(containsDuplicate([2, 3, 1, 3]));  // true
+console.log(containsDuplicate([2, 1, 3]));  //false
+console.log(containsDuplicate(["shehzad", "", "shehzad"])); //true
+console.log(containsDuplicate(["a", "b", "c"]));  //false
