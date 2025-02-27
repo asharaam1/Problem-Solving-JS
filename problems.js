@@ -84,7 +84,7 @@ let solution = document.querySelector('.text');
 //     let reverseString = s.split("").reverse().join("");
 //     let result = s === reverseString;
 //     console.log(reverseString);
-    
+
 //     return result;
 // }
 
@@ -114,19 +114,48 @@ let solution = document.querySelector('.text');
 
 
 //! Pr # 05
-// problem.innerHTML = "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. <br/>  link: <a href="https://leetcode.com/problems/contains-duplicate/description/">https://leetcode.com/problems/contains-duplicate/description/</a>"
-function containsDuplicate(nums) {
-    nums.sort(); // this is for aligning same number together
+// problem.innerHTML = `Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. <br/>  link: <a href="https://leetcode.com/problems/contains-duplicate/description/">https://leetcode.com/problems/contains-duplicate/description/</a>`
+// function containsDuplicate(nums) {
+//     nums.sort(); // this is for aligning same number together
 
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] === nums[i + 1]) {  //here i+1 will check the next element in the loop buz lenghth is used
-            return true;
-        }
-    }
-    return false;
-}
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] === nums[i + 1]) {  //here i+1 will check the next element in the loop buz lenghth is used
+//             return true;
+//         }
+//     }
+//     return false;
+// }
 
-console.log(containsDuplicate([2, 3, 1, 3]));  // true
-console.log(containsDuplicate([2, 1, 3]));  //false
-console.log(containsDuplicate(["shehzad", "", "shehzad"])); //true
-console.log(containsDuplicate(["a", "b", "c"]));  //false
+// console.log(containsDuplicate([2, 3, 1, 3]));  // true
+// console.log(containsDuplicate([2, 1, 3]));  //false
+// console.log(containsDuplicate(["shehzad", "", "shehzad"])); //true
+// console.log(containsDuplicate(["a", "b", "c"]));  //false
+
+
+
+//! Pr # 06
+// problem.innerHTML = `Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.  <br/>  link: <a href="https://leetcode.com/problems/add-digits/">https://leetcode.com/problems/add-digits/</a>`
+
+// const addDigit = (num) => {
+//     let arrayOfNumber = String(num).split("");
+
+//     let sum = 0;
+
+//     for (let i = 0; i < arrayOfNumber.length; i++) {
+//         sum += Number(arrayOfNumber[i]);
+//     }
+
+//     if (sum > 9) {
+//         let result = addDigit(sum);
+//         return result;
+//     }
+
+//     return sum;
+// };
+
+// console.log(addDigit(4211)); // 8
+// console.log(addDigit(83)); // 2
+// console.log(addDigit("3567887654")); // 5
+
+// let ans = addDigit(38)
+// solution.innerHTML = `Input = 38  <br/>Result: ${ans}`
