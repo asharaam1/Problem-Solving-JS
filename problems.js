@@ -159,3 +159,31 @@ let solution = document.querySelector('.text');
 
 // let ans = addDigit(38)
 // solution.innerHTML = `Input = 38  <br/>Result: ${ans}`
+
+
+
+//! Pr # 07
+// problem.innerHTML = `You are given a 0-indexed array of strings words and a character x.
+// <br/>
+// Return an array of indices representing the words that contain the character x.
+// <br/>
+// Note that the returned array may be in any order.  <br/>  link: <a href="https://leetcode.com/problems/find-words-containing-character/description/">https://leetcode.com/problems/find-words-containing-character/description/</a>`
+
+// function findWordsContaining(words, x) {
+//     let result = [];
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i].includes(x)) {
+//             result.push(i);
+//         }
+//     }
+//     return result;
+// }
+
+// // let words = ["leet", "code"], x = "e";// [0,1]
+// // let words = ["abc", "bcd", "aaaa", "cbc"], x = "z"; // []
+// let words = ["abc", "bcd", "aaaa", "cbc"], x = "a";
+
+// console.log(findWordsContaining(words, x));
+
+// let ans = findWordsContaining(words, x);
+// solution.innerHTML = `words = ["abc", "bcd", "aaaa", "cbc"], x = "a" <br/>Result: index ${ans}`
