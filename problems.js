@@ -187,3 +187,28 @@ let solution = document.querySelector('.text');
 
 // let ans = findWordsContaining(words, x);
 // solution.innerHTML = `words = ["abc", "bcd", "aaaa", "cbc"], x = "a" <br/>Result: index ${ans}`
+
+
+
+//! Pr # 08
+problem.innerHTML = `Given an integer array arr and a filtering function fn, return a filtered array filteredArr.
+<br/>
+The fn function takes one or two arguments:
+<br/>
+<ul>
+    <li>arr[i] - number from the arr</li>
+    <li>i - index of arr[i]</li>
+</ul>
+<br/>  
+link: <a href="https://leetcode.com/problems/filter-elements-from-array/description/">https://leetcode.com/problems/filter-elements-from-array/description/</a>`
+
+var filter = function (arr, fn) {
+    const FilterArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (fn(arr[i], i)) {
+            FilterArr.push(arr[i]);
+        }
+    }
+    return FilterArr;
+};
+
