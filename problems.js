@@ -217,3 +217,45 @@ let solution = document.querySelector('.text');
 // let ans = filter(arr, fn);
 // console.log(ans);
 // solution.innerHTML = `Array = [2, 8, 9, 4, 7, 3],<br/>Result:  Filter of Even Numbers ${ans}`
+
+
+
+//! Pr # 09
+// problem.innerHTML = `ROMAN TO INTERGER <br/>
+// Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M
+// <br/>  
+// link: <a href="https://leetcode.com/problems/roman-to-integer/description/">https://leetcode.com/problems/roman-to-integer/description/</a>`
+
+// var romanToInt = function (roman) {
+
+//     const romanNumerals = {
+//         I: 1,
+//         V: 5,
+//         X: 10,
+//         L: 50,
+//         C: 100,
+//         D: 500,
+//         M: 1000
+//     };
+
+//     let total = 0;
+//     for (let i = 0; i < roman.length; i++) {
+//         const current = romanNumerals[roman[i]];
+//         const next = romanNumerals[roman[i + 1]];
+
+//         if (next > current) {
+//             total += next - current; // If the next numeral is larger, subtract current from next
+//             i++; // Skip the next numeral as it's already processed
+//         } else {
+//             total += current; // Otherwise, just add the current numeral
+//         }
+//     }
+
+//     return total;
+// }
+
+// console.log(romanToInt("MCMXCIV")); // Output: 1994
+
+// let ans = romanToInt("XIV")   // Output: 14
+// console.log(ans);
+// solution.innerHTML = `Input = XIV ,<br/>Result: Integer: ${ans}`
