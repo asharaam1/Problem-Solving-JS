@@ -259,3 +259,12 @@ let solution = document.querySelector('.text');
 // let ans = romanToInt("XIV")   // Output: 14
 // console.log(ans);
 // solution.innerHTML = `Input = XIV ,<br/>Result: Integer: ${ans}`
+
+
+
+//! Pr # 10
+problem.innerHTML = `Merge Two Sorted Lists <br/>
+Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+Return the head of the merged linked list.
+<br/>  
+link: <a href="https://leetcode.com/problems/merge-two-sorted-lists/description/">https://leetcode.com/problems/merge-two-sorted-lists/description/</a>`
