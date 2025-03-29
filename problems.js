@@ -268,3 +268,37 @@ Merge the two lists into one sorted list. The list should be made by splicing to
 Return the head of the merged linked list.
 <br/>  
 link: <a href="https://leetcode.com/problems/merge-two-sorted-lists/description/">https://leetcode.com/problems/merge-two-sorted-lists/description/</a>`
+class ListNode {
+    constructor(val = 0, next = null) {
+        this.val = val;
+        this.next = next;
+    }
+}
+
+function mergeTwoLists(list1, list2) {
+    // Create a dummy node as the starting point of the merged list
+    const dummy = new ListNode();
+    let current = dummy; // Pointer to build the merged list
+
+    // Traverse through both lists
+    while (list1 !== null && list2 !== null) {
+        if (list1.val < list2.val) {
+            current.next = list1; // Add list1 node to the merged list
+            list1 = list1.next;  // Move to the next node in list1
+        } else {
+            current.next = list2; // Add list2 node to the merged list
+            list2 = list2.next;  // Move to the next node in list2
+        }
+        current = current.next; // Move the pointer in the merged list
+    }
+
+    // Append the remaining nodes from either list
+    if (list1 !== null) {
+        current.next = list1;
+    } else if (list2 !== null) {
+        current.next = list2;
+    }
+
+    // Return the merged list (starting from dummy's next node)
+    return dummy.next;
+}
