@@ -263,42 +263,75 @@ let solution = document.querySelector('.text');
 
 
 //! Pr # 10
-problem.innerHTML = `Merge Two Sorted Lists <br/>
-Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
-Return the head of the merged linked list.
-<br/>  
-link: <a href="https://leetcode.com/problems/merge-two-sorted-lists/description/">https://leetcode.com/problems/merge-two-sorted-lists/description/</a>`
-class ListNode {
-    constructor(val = 0, next = null) {
-        this.val = val;
-        this.next = next;
-    }
-}
+// problem.innerHTML = `Merge Two Sorted Lists <br/>
+// Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+// Return the head of the merged linked list.
+// <br/>  
+// link: <a href="https://leetcode.com/problems/merge-two-sorted-lists/description/">https://leetcode.com/problems/merge-two-sorted-lists/description/</a>`
+// class ListNode {
+//     constructor(val = 0, next = null) {
+//         this.val = val;
+//         this.next = next;
+//     }
+// }
 
-function mergeTwoLists(list1, list2) {
-    // Create a dummy node as the starting point of the merged list
-    const dummy = new ListNode();
-    let current = dummy; // Pointer to build the merged list
+// function mergeTwoLists(list1, list2) {
+//     // Create a dummy node as the starting point of the merged list
+//     const dummy = new ListNode();
+//     let current = dummy; // Pointer to build the merged list
 
-    // Traverse through both lists
-    while (list1 !== null && list2 !== null) {
-        if (list1.val < list2.val) {
-            current.next = list1; // Add list1 node to the merged list
-            list1 = list1.next;  // Move to the next node in list1
-        } else {
-            current.next = list2; // Add list2 node to the merged list
-            list2 = list2.next;  // Move to the next node in list2
-        }
-        current = current.next; // Move the pointer in the merged list
-    }
+//     // Traverse through both lists
+//     while (list1 !== null && list2 !== null) {
+//         if (list1.val < list2.val) {
+//             current.next = list1; // Add list1 node to the merged list
+//             list1 = list1.next;  // Move to the next node in list1
+//         } else {
+//             current.next = list2; // Add list2 node to the merged list
+//             list2 = list2.next;  // Move to the next node in list2
+//         }
+//         current = current.next; // Move the pointer in the merged list
+//     }
 
-    // Append the remaining nodes from either list
-    if (list1 !== null) {
-        current.next = list1;
-    } else if (list2 !== null) {
-        current.next = list2;
-    }
+//     // Append the remaining nodes from either list
+//     if (list1 !== null) {
+//         current.next = list1;
+//     } else if (list2 !== null) {
+//         current.next = list2;
+//     }
 
-    // Return the merged list (starting from dummy's next node)
-    return dummy.next;
-}
+//     // Return the merged list (starting from dummy's next node)
+//     return dummy.next;
+// }
+
+// // Helper function to create a linked list from an array
+// function arrayToList(arr) {
+//     const dummy = new ListNode();
+//     let current = dummy;
+//     for (const val of arr) {
+//         current.next = new ListNode(val);
+//         current = current.next;
+//     }
+//     return dummy.next;
+// }
+
+// // Test the function
+// const list1 = arrayToList([1, 2, 4]);
+// const list2 = arrayToList([1, 3, 4]);
+
+// const mergedList = mergeTwoLists(list1, list2);
+
+// // Print the merged list
+// function printList(head) {
+//     let current = head;
+//     const result = [];
+//     while (current !== null) {
+//         result.push(current.val); // Collect values of the linked list nodes
+//         current = current.next;
+//     }
+//     return result.join(", "); // Return the string representation
+// }
+// printList(mergedList); // Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4
+
+// let ans = printList(mergedList); 
+// console.log(ans);
+// solution.innerHTML = `list1: [1, 2, 4]<br/> list2: [1, 3, 4] <br/> Output: ${ans}`
